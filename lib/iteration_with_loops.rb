@@ -4,6 +4,6 @@ def join_nested_strings(src)
   src.length.times do |row_i|
     src[row_i].length.times do |el_i|
       if src[row_i][el_i].is_a? String
-        out_string.join(src[row_i][el_i])
+        out_string(src[row_i][el_i])
       end
 end
