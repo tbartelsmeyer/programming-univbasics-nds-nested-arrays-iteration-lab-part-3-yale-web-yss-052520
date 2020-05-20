@@ -3,5 +3,5 @@ def join_nested_strings(src)
   # Combine all Strings present in the AoA into a single value and return it
   src.length.times do |row_i|
     src[row_i].length.times do |el_i|
-      if src[row_i][el_i].type
+      if src[row_i][el_i].is_a? string
 end
